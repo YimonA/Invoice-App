@@ -14,7 +14,7 @@ const ProductDrawer = () => {
     >
       <div className="mb-3 flex justify-between items-center">
       <p className=" text-lg font-semibold">Your Product</p>
-      <button onClick={toggleDrawer} className="btn-circle">X</button>
+      <button onClick={toggleDrawer} className="select-none w-6 h-6 rounded-full bg-slate-200">X</button>
       </div>
       <ul className="mb-2 border border-blue-600 p-2">
       {products.map((product,index)=><Product key={product.id} index={index} product={product}/>)}
